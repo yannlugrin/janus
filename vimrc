@@ -39,6 +39,11 @@ set noequalalways
 let NERDTreeIgnore=['\.rbc$', '\~$']
 map <Leader>n :NERDTreeToggle<CR>
 
+" NERDCommenter configuration
+map <Leader>cc <plug>NERDCommenterCommenter<CR>
+map <Leader>cu <plug>NERDCommenterUncomment<CR>
+map <Leader>c<space> <plug>NERDCommenterToggle<CR>
+
 " Command-T configuration
 let g:CommandTMaxHeight=20
 
