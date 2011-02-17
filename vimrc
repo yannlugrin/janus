@@ -37,6 +37,7 @@ set noequalalways
 
 " NERDTree configuration
 let NERDTreeIgnore=['\.rbc$', '\~$']
+let NERDTreeMouseMode=2
 map <Leader>n :NERDTreeToggle<CR>
 
 " NERDCommenter configuration
