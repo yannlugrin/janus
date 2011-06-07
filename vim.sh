@@ -16,4 +16,4 @@ else
   working_file=""
   working_dir=""
 fi
-konsole --profile Vim -e vim -c "NERDTree $working_dir" $working_file 2>&1 >/dev/null
+konsole --profile Vim -e vim -c "NERDTree $working_dir" $working_file >/dev/null 2>&1
