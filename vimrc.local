@@ -1,5 +1,13 @@
 " Theme
 color railscasts2
+set transparency=2
+set guioptions=aAce
+
+" Map Arrows
+vmap <Up> k
+vmap <Down> j
+vmap <Right> l
+vmap <Left> h
 
 " NERDTree configuration
 let NERDTreeMouseMode = 2
@@ -15,3 +23,8 @@ map <Leader>c<space> <plug>NERDCommenterToggle<CR>
 " SnipMate
 let snippets_dir = substitute(globpath(&rtp, 'snippets_custom/'), "\n", ',', 'g')
 
+" Guardfile is ruby
+au BufRead,BufNewFile {Guardfile}    set ft=ruby
+
+" avoid select mode
+set selectmode=
