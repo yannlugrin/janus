@@ -12,3 +12,6 @@ map <Leader>cc <plug>NERDCommenterCommenter<CR>
 map <Leader>cu <plug>NERDCommenterUncomment<CR>
 map <Leader>c<space> <plug>NERDCommenterToggle<CR>
 
+" SnipMate
+let snippets_dir = substitute(globpath(&rtp, 'snippets_custom/'), "\n", ',', 'g')
+

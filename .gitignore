@@ -8,6 +8,7 @@ doc
 plugin
 ruby
 snippets
+!snippets_custom/*
 syntax
 syntax_checkers
 ftdetect
