@@ -1,0 +1,14 @@
+" Theme
+color railscasts2
+
+" NERDTree configuration
+let NERDTreeMouseMode = 2
+let NERDTreeCaseSensitiveSort = 0
+let NERDTreeChDirMode = 2
+let NERDTreeShowHidden = 1
+
+" NERDCommenter configuration
+map <Leader>cc <plug>NERDCommenterCommenter<CR>
+map <Leader>cu <plug>NERDCommenterUncomment<CR>
+map <Leader>c<space> <plug>NERDCommenterToggle<CR>
+

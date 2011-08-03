@@ -1,0 +1,5 @@
+vim_plugin_task "zencoding",        "git://github.com/mattn/zencoding-vim.git"
+
+skip_vim_plugin "nerdtree"
+vim_plugin_task "nerdtree_custom",  "git://github.com/scrooloose/nerdtree.git"
+

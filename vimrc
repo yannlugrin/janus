@@ -1,6 +1,6 @@
 set nocompatible
 
-let mapleader = ","
+let mapleader=','
 
 set number
 set ruler
@@ -10,7 +10,6 @@ syntax on
 set encoding=utf-8
 
 " Whitespace stuff
-set binary
 set nowrap
 set tabstop=2
 set shiftwidth=2
@@ -39,11 +38,6 @@ set noequalalways
 " NERDTree configuration
 let NERDTreeIgnore=['\.pyc$', '\.rbc$', '\~$']
 map <Leader>n :NERDTreeToggle<CR>
-
-" NERDCommenter configuration
-map <Leader>cc <plug>NERDCommenterCommenter<CR>
-map <Leader>cu <plug>NERDCommenterUncomment<CR>
-map <Leader>c<space> <plug>NERDCommenterToggle<CR>
 
 " Command-T configuration
 let g:CommandTMaxHeight=20
@@ -76,7 +70,7 @@ endfunction
 au FileType make set noexpandtab
 
 " Thorfile, Rakefile, Vagrantfile and Gemfile are Ruby
-au BufRead,BufNewFile {Gemfile,Rakefile,Guardfile,Vagrantfile,Thorfile,config.ru}    set ft=ruby
+au BufRead,BufNewFile {Gemfile,Rakefile,Vagrantfile,Thorfile,config.ru}    set ft=ruby
 
 " md, markdown, and mk are markdown and define buffer-local preview
 au BufRead,BufNewFile *.{md,markdown,mdown,mkd,mkdn} call s:setupMarkup()
