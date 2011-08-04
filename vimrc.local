@@ -1,7 +1,5 @@
 " Theme
 color railscasts2
-set transparency=2
-set guioptions=aAce
 
 " Map Arrows
 vmap <Up> k

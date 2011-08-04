@@ -1,5 +1,16 @@
+
 vim_plugin_task "zencoding",        "git://github.com/mattn/zencoding-vim.git"
 
 skip_vim_plugin "nerdtree"
 vim_plugin_task "nerdtree_custom",  "git://github.com/scrooloose/nerdtree.git"
+
+# link custom vimrc & gvimrc
+task :link_vimrc do
+  %w[ vimrc.local gvimrc.local ].each do |file|
+    dest = File.expand_path("~/.#{file}")
+    unless File.exist?(dest)
+      ln_s(File.expand_path("../#{file}", __FILE__), dest)
+    end
+  end
+end
 

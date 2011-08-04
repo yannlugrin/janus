@@ -220,7 +220,7 @@ vim_plugin_task "vwilight" do
   sh "curl https://raw.github.com/gist/796172/724c7ca237a7f6b8d857c4ac2991cfe5ffb18087 > colors/vwilight.vim"
 end
 
-if File.exists?(janus = File.expand_path("~/.janus.rake"))
+if File.exists?(janus = File.expand_path("../Rakefile.local", __FILE__))
   puts "Loading your custom rake file"
   import(janus)
 end
@@ -247,7 +247,7 @@ end
 
 desc "Pull the latest"
 task :pull do
-  system "git pull"
+  system "git pull carlhuda master" || exit
 end
 
 task :default => [
