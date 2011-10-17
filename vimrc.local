@@ -24,5 +24,5 @@ let snippets_dir = substitute(globpath(&rtp, 'snippets_custom/'), "\n", ',', 'g'
 " Guardfile is ruby
 au BufRead,BufNewFile {Guardfile}    set ft=ruby
 
-" avoid select mode
-set selectmode=
+" avoid auto-copy selection tio clopboard
+set clipboard-=autoselect
