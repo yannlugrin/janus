@@ -2,3 +2,6 @@
 set transparency=2
 set guioptions=""
 set selectmode-=mouse
+
+" Ruby
+let s:ri_found = 0 " disable ri ballon (I don't install ri documentation)
